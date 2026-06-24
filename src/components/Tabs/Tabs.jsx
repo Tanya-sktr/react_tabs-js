@@ -12,7 +12,7 @@ export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
         <ul>
           {tabs.map(tab => {
             //  Перевіряю, чи ця вкладка активна
-            const isActive = tab.id === activeTabId;
+            const isActive = tab.id === activeTab.id;
 
             return (
               <li
