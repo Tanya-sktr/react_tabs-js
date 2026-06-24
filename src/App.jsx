@@ -15,7 +15,7 @@ export const App = () => {
   // 1. Створюємо стан - яка вкладка активна
   const [activeTabId, setActiveTabId] = useState('tab-1');
   //    ↑ початкове значення 'tab-1'
-  const activeTab = tabs.find(tab => tab.id === activeTabId || tabs[0]);
+  const activeTab = tabs.find(tab => tab.id === activeTabId) || tabs[0];
 
   return (
     <div className="section">

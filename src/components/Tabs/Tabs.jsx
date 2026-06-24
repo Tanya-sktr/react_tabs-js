@@ -4,7 +4,7 @@ export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
   // - activeTabId: ID активної вкладки
   // - onTabSelected: функція для зміни активної
 
-  const activeTab = tabs.find(tab => tab.id === activeTabId || tabs[0]);
+  const activeTab = tabs.find(tab => tab.id === activeTabId) || tabs[0];
 
   return (
     <div data-cy="TabsComponent">
